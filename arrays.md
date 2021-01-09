@@ -56,4 +56,12 @@ for(int i = 0; i < arr.length; i++) {
 
 ### FOREACH LOOPS:
 
+Foreach loops enables you to traverse the array sequentially wihtout having to use a index variable. To display all the elements of an array, we could for example:
+
+```
+for(int i: myArray) {
+  System.out.println(i);
+}
+```
+
 
