@@ -1,4 +1,4 @@
-# ELEMENTARY PROGRAMMING
+# ELEMENTARY JAVA
 
 ### THE MAIN METHOD:
 
@@ -22,6 +22,7 @@ NextLine()						//read the entire line of text
 
 nextByte(), nextShort(), nextInt(), nextLong(), nextFloat(), nextDouble(), next()		//token inputs
 nextLine()											//line-based input
+```
 
 ### CONSTANTS:
 
