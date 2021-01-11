@@ -30,7 +30,7 @@ nextLine()											//line-based input
 final datatype CONSTANTNAME = value;
 ```
 
-casting:
+### CASTING:
 
 ```
 int x = (int)6.32;		//x = 7
@@ -51,7 +51,7 @@ int y = ++x;			//x = 11, y = 11
 
 ### CONTROL STATEMENTS:
 
-The if-then statement:
+##### The if-then statement:
 
 ```
 if(test) {
@@ -64,7 +64,7 @@ if(test) {
 }
 ```
 
-The switch statement:
+##### The switch statement:
 
 ```
 switch(expression) {
@@ -77,7 +77,7 @@ switch(expression) {
 }
 ```
 
-OUTPUT STATEMENTS:
+### OUTPUT STATEMENTS:
 
 ```
 System.out.print(item);
@@ -108,14 +108,14 @@ String trim();					//returns copy with whitespace removed from each end
 ### COMPARING STRINGS:
 
 ```
-int compareTo(String s);			/*returns negative if string comes alphabetically before s, zero
-                       			    if equal, and positive if alphabetically after*/
+int compareTo(String s);			//returns negative if string comes alphabetically before s, zero
+                       			        //if equal, and positive if alphabetically after*/
 int compareToIgnoreCase(String s);		//ignores upper/lowercase
 boolean equals(Object o);			//true if o is a string with the same contents as this string
 boolean equalsIgnoreCase(String s)		//returns true if s has the same contents as this string, ignoring case
 
-**							//use equals to test whether two strings have the same contents
-**							//use compareTo() to compare string and test for alphabetical order
+**						//use equals to test whether two strings have the same contents
+**						//use compareTo() to compare string and test for alphabetical order
 ```
 
 ### ENHANCED FOR-LOOP:
@@ -138,7 +138,7 @@ System.currentTimeMillis() % 10			//generate random number
 Math.abs(number);				//return the absolute value of number
 ```
 
-Reversing a number:
+##### Reversing a number:
 
 ```
 n = 13
@@ -161,15 +161,15 @@ pow(a, b);					//returns a raised to the power of b
 sqrt(x);					//returns the square root of x
 ```
 
-Rounding:
+##### Rounding:
 
 ```
 ceil(x);					//x is rounded up to its nearest integer (returns a double)
 floor(x);					//x is rounded down to its nearest integer (returns a double)
 rint(x);					//x is rounded to its nearest integer
 round(x);					//returns (int)Math.floor(x + 0.5) if x is float
-                  //returns (long)Math.floor(x + 0.5) if x is a double
-min/max/abs:						//works for int, long, float, double
+                  				//returns (long)Math.floor(x + 0.5) if x is a double
+min/max/abs:					//works for int, long, float, double
 max(4.4, 5.0);					//returns 5.0
 min(3, 2);					//returns 2
 abs(-2);					//returns 2
@@ -178,9 +178,9 @@ abs(-2);					//returns 2
 ### ASCII
 
 ```
-'0' to '9'						//code value 48 - 57; unicode value \u0030 - \u0039
-'A' to 'Z'						//code value 65 - 90; unicode value \u0041 - \u005A
-'a' to 'z'						//code value 97 - 122; unicode value \u0061 - \u007A
+'0' to '9'					//code value 48 - 57; unicode value \u0030 - \u0039
+'A' to 'Z'					//code value 65 - 90; unicode value \u0041 - \u005A
+'a' to 'z'					//code value 97 - 122; unicode value \u0061 - \u007A
 ```
 
 ### HEXIDECIMAL:
@@ -205,7 +205,7 @@ Decimal	Hexidecimal
 15	F
 ```
 
-Converting hex to numbers:
+##### Converting hex to numbers:
 
 ```
 int decimalValue = 0;
@@ -218,13 +218,13 @@ for(int i = 0; i < hex.length(); i++) {
 ### ESCAPE SEQUENCES:
 
 ```
-\b							//backspace
-\t							//tab
-\n							//linefeed
-\f							//formfeed
-\r							//carriage return
-\\							//backslash
-\"							//double quote
+\b					//backspace
+\t					//tab
+\n					//linefeed
+\f					//formfeed
+\r					//carriage return
+\\					//backslash
+\"					//double quote
 ```
 
 ### TESTING CHARACTERS:
@@ -243,93 +243,93 @@ toLowerCase(ch);				//returns lower case of character
 toUpperCase(ch);				//returns upper case of character
 ```
 
-string methods:
+### STRING METHODSstring methods:
 
-1	length();					//Returns the number of characters in this string.
-2	charAt(index);					//Returns the character at the specified index from this string.
-3	concat(s1);					//Returns a new string that concatenates this string with string s1.
-4	toUpperCase();					//Returns a new string with all letters in uppercase.
-5	toLowerCase();					//Returns a new string with all letters in lowercase.
-6	trim(); 					//Returns a new string with whitespace characters trimmed on both sides.
+length();					//Returns the number of characters in this string.
+charAt(index);					//Returns the character at the specified index from this string.
+concat(s1);					//Returns a new string that concatenates this string with string s1.
+toUpperCase();					//Returns a new string with all letters in uppercase.
+toLowerCase();					//Returns a new string with all letters in lowercase.
+trim(); 					//Returns a new string with whitespace characters trimmed on both sides.
 
 comparing strings:
 
-1	equals(s1);					//true if this string is equal to string s1
-2	equalsIgnoreCase(s1);				//true if string is equal to s1; case sensitive
-3	compareTo(s1);					//returns int greater than 0, equal to 0, less than 0 indicating whether
-							//the string is greater than, equal to, or less than s1
-4	compareToIgnoreCase(s1);			//comparison is case sensitive
-5	startsWith(prefix);				//true if string starts with prefix
-6	endsWith(suffix);				//""
-7	contains(s1);					//true if s1 is a substring in this string
+equals(s1);					//true if this string is equal to string s1
+equalsIgnoreCase(s1);				//true if string is equal to s1; case sensitive
+compareTo(s1);					//returns int greater than 0, equal to 0, less than 0 indicating whether
+						//the string is greater than, equal to, or less than s1
+compareToIgnoreCase(s1);			//comparison is case sensitive
+startsWith(prefix);				//true if string starts with prefix
+endsWith(suffix);				//""
+contains(s1);					//true if s1 is a substring in this string
 
-1	string == string1;				//only checks if both strings refer to the same object, not same contents
-2	string.equals(string1);				//prefered method
+string == string1;				//only checks if both strings refer to the same object, not same contents
+string.equals(string1);				//prefered method
 
-substrings:
+### SUBSTRINGS:
 
-1	String message = "Welcome to Java";
-2	String message = message.substring(0, 11);
-3	//string now is "Welcome to ";
+String message = "Welcome to Java";
+String message = message.substring(0, 11);
+//string now is "Welcome to ";
 
-1	substring(beginIndex);
-2	substring(beginIndex, endIndex);
+substring(beginIndex);
+substring(beginIndex, endIndex);
 
-finding character strings:
+### FINDING CHARACTER STRINGS:
 
-1	indexOf(ch);					//returns index of first occurence of ch; -1 if no math
-2	indexOf(ch, fromIndex);				//finds occurence starting at fromIndex
-3	indexOf(s);					//"" but for strings
-4	indexOf(s, fromIndex);				//"" but for strings
-5	lastIndexOf(ch);				//last occurence of character ch
-6	lastIndexOf(ch, fromIndex);			//""
-7	lastIndexOf(s);					
-8	lastIndexOf(s, fromIndex);
+indexOf(ch);					//returns index of first occurence of ch; -1 if no math
+indexOf(ch, fromIndex);				//finds occurence starting at fromIndex
+indexOf(s);					//"" but for strings
+indexOf(s, fromIndex);				//"" but for strings
+lastIndexOf(ch);				//last occurence of character ch
+lastIndexOf(ch, fromIndex);			//""
+lastIndexOf(s);					
+lastIndexOf(s, fromIndex);
 
-convert string to number:
+### Convert string to number:
 
-1	intValue = Integer.parseInt(intString);		//string into int
-2	//example
-3	String x = "23";
-4	int y = Integer.parseInt(x);			
-5	double dV = Double.parseDouble(doubleString);
+intValue = Integer.parseInt(intString);		//string into int
+//example
+String x = "23";
+int y = Integer.parseInt(x);			
+double dV = Double.parseDouble(doubleString);
 
-formated printing:
+### FORMATED PRINTING:
 
-1	printf();					
+printf();					
 
-	%b						//boolean value
-	%c						//character
-	%d						//decimal integer
-	%f						//floating-point number
-	%e						//number in standard scientific notation
-	%s						//string
+%b						//boolean value
+%c						//character
+%d						//decimal integer
+%f						//floating-point number
+%e						//number in standard scientific notation
+%s						//string
 
-1	int count = 5;
-2	double amount = 45.56;
-3	System.out.printf("count is %d and amount is %f", count, amount);
+int count = 5;
+double amount = 45.56;
+System.out.printf("count is %d and amount is %f", count, amount);
 
-while loops:
+### WHILE LOOPS:
 
-1	while(...) {					//off-by-one error, use n - 1
-2 		...;
-3		System.out.println(...);
-4	}
+while(...) {					//off-by-one error, use n - 1
+  ...;
+  System.out.println(...);
+}
 
-do-while loop:
+### DO-WHILE:
 
-1	do {						//loop executes at least ones before checking conditions
-2		...;
-3		...;
-4	} while(...);
+do {						//loop executes at least ones before checking conditions
+  ...;
+  ...;
+} while(...);
 
-for loop:
+### FOR-LOOP:
 
-1	for(int i = 0; i < n; i++) {
-2		...;
-3	};
+for(int i = 0; i < n; i++) {
+  ...;
+};
 
-BREAK / CONTINUE:
+### BREAK / CONTINUE:
 Using break immediately terminates a loop, while continue ends the current iteration and program control goes to the end of the loop body (i.e. continue breaks out of an iteration while the break keyword breaks out of a loop). 
 
 while(num < 20) {
@@ -351,12 +351,7 @@ while(num < 20) {
 }
 System.out.println("The sum is " + sum);
 
-
-
-*************************************************************************************************************************************
-Chapter 6: Methods
-
-DEFINING A METHOD:
+### DEFINING A METHOD:
 
 modifier returnValueType methodName(list of parameters) {
   ...;
@@ -375,7 +370,7 @@ ClassName.methodName;
 
 When a method is envoked, the system creates an activation record that stores parameters and variables for the method an dplaces the activation record in an area of memory known as a call stack (e.g. execution stack, runtime stack, machine stack, the stack). Once the method finishes, it returns to caller and the activation record is removed from the stack. Stored as a last-in, first out fashion. 
 
-VOID METHOD:
+### THE VOID METHOD:
 
 The void method does not return a value. A 'return' statement is not needed, but it can be used to terminate the method and return to the method's caller. Example:
 
@@ -386,14 +381,14 @@ public static void printGrade(double score) {
   }
 }
 
-OVERLOADING METHODS:
+### OVERLOADING METHODS:
 
 This allows you to name methods the same as long as the parameter lists are different. For example, instead of having a max method that accepts ints, you could have one that accepts doubles. The compiler will search out the method that is best fitting for the input. Generally, this makes reading a program easier. 
 
-VARIABLE SCOPES:
+### VARIABLE SCOPES:
 
 The scope of a variable refers to the part of the program where the variable can be referenced. A variable defined inside a method is a local variable; it ends when the block that contains that variable ends. As long as variables are not nested in the same block, it can be declared multiple times. 
 
-ABSTRACTION: 
+### ABSTRACTION: 
 
 This is achieved by seperating the use of a method from its implementation. Thus, a user can use a method without knowing how it is implemented. 
